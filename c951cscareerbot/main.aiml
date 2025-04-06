@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    
+<category>
+    <pattern>*</pattern>
+    <template>Hello! I am the Computer Science Career Bot. Are you ready to explore potential career options based on your skills and interests? Type 'BEGIN' to start!</template>
+</category>    
+<category>
+    <pattern>BEGIN</pattern>
+    <template>Please click the "Start" button below to begin the questionnaire!
+        <button>
+            <text>Start</text>
+            <postback>CAREER ADVISOR</postback>
+        </button>
+    </template>
+</category>
+<!--VIDEO GAME DESIGNER-->
+<category>
+    <pattern>CAREER ADVISOR</pattern>
+    <template>Do you have a passion for video games and building digital worlds?
+        <button>
+            <text>Sounds great! Please show me more info!</text>
+            <url>https://en.wikipedia.org/wiki/Video_game_design</url>
+        </button>
+        <button>
+            <text>See More Career Paths</text>
+            <postback>WEB DEVELOPER</postback>
+        </button>
+        <button>
+            <text>Start over</text>
+            <postback>BEGIN</postback>
+        </button>
+    </template>
+</category>
+<!--WEB DEVELOPER-->
+<category>
+    <pattern>WEB DEVELOPER</pattern>
+    <template>Are you interested in the process of creating professional and streamlined websites, perhaps?
+        <button>
+            <text>Sounds great! Please show me more info!</text>
+            <url>https://en.wikipedia.org/wiki/Web_developer</url>
+        </button>
+        <button>
+            <text>See More Career Paths</text>
+            <postback>CYBERSECURITY SPECIALIST</postback>
+        </button>
+        <button>
+            <text>Start over</text>
+            <postback>BEGIN</postback>
+        </button>
+    </template>
+</category>
+<!--CYBERSECURITY SPECIALIST-->
+<category>
+    <pattern>CYBERSECURITY SPECIALIST</pattern>
+    <template>Do you want to be responsible for securing networks and programs against threats?
+        <button>
+            <text>Sounds great! Please show me more info!</text>
+            <url>https://en.wikipedia.org/wiki/Computer_security</url>
+        </button>
+        <button>
+            <text>See other options</text>
+            <postback>SOFTWARE ENGINEER</postback>
+        </button>
+        <button>
+            <text>See More Career Paths</text>
+            <postback>BEGIN</postback>
+        </button>
+    </template>
+</category>
+<!--SOFTWARE ENGINEER-->
+<category>
+    <pattern>SOFTWARE ENGINEER</pattern>
+    <template>Do you want to build complex software that can serve a variety of tasks or solutions?
+        <button>
+            <text>Sounds great! Please show me more info!</text>
+            <url>https://en.wikipedia.org/wiki/Software_engineering</url>
+        </button>
+        <button>
+            <text>See More Career Paths</text>
+            <postback>DATA ENGINEER</postback>
+        </button>
+        <button>
+            <text>Start over</text>
+            <postback>BEGIN</postback>
+        </button>
+    </template>
+</category>
+<!--DATA ENGINEER-->
+<category>
+    <pattern>DATA ENGINEER</pattern>
+    <template>Do you want to study data and use it to build relational databases?
+        <button>
+            <text>Sounds great! Please show me more info!</text>
+            <url>https://en.wikipedia.org/wiki/Data_engineering</url>
+        </button>
+        <button>
+            <text>See More Career Paths</text>
+            <postback>CAREER ADVISOR</postback>
+        </button>
+        <button>
+            <text>Start over</text>
+            <postback>BEGIN</postback>
+        </button>
+    </template>
+</category>
+</aiml>
+
+
+
+
